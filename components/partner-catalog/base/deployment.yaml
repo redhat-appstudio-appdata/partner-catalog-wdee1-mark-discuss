@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: partner-catalog
     spec:
       containers:
-      - image: java-springboot-image:latest
+      - image: quay.io/redhat-user-workloads/fduthill-tenant/partner-catalog/partner-catalog@sha256:3f0be4b0aed06da1e61e82a746bd4f9b4cb887f68ff862ac2e12f2ac3bcbf7bd
         name: my-java-springboot
         ports:
         - containerPort: 8081
