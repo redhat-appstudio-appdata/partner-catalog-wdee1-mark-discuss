@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: partner-catalog
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/fduthill-tenant/partner-catalog/partner-catalog@sha256:3f0be4b0aed06da1e61e82a746bd4f9b4cb887f68ff862ac2e12f2ac3bcbf7bd
+        name: my-java-springboot
+        resources: {}
+status: {}
